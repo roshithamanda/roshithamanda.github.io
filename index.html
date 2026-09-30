@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roshith Amanda Perera | WordPress Malware Removal & Cybersecurity</title>
+  <meta name="description" content="Hacked WordPress site? I remove malware, close the hole the attacker used, and harden your site. Cybersecurity, cloud security and machine learning by Roshith Amanda Perera, Sri Lanka.">
+  <meta name="theme-color" content="#0f2a33">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Roshith Amanda Perera, home">
+    <span class="brand-mark" aria-hidden="true">RP</span>
+    <span class="brand-name">Roshith Perera</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+  <nav id="nav" class="nav">
+    <a href="#services">Services</a>
+    <a href="#process">How it works</a>
+    <a href="#project">Project</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="nav-cta">Get help</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <p class="hero-kicker">Cybersecurity and cloud security, Sri Lanka</p>
+      <h1>Hacked WordPress site? I find the malware, remove it, and lock the door behind it.</h1>
+      <p class="lead">Redirects to spam sites, Google warnings, unknown admin users, a host that suspended your account. I clean the site, close the hole the attacker used, and show you what I found.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Request a cleanup</a>
+        <a class="btn btn-ghost" href="https://wa.me/94753315890?text=Hi%20Roshith%2C%20my%20WordPress%20site%20has%20been%20hacked." target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
+      <p class="hero-note">Not sure it is malware? Send me the URL and I will tell you what I see.</p>
+    </div>
+
+    <!-- Interactive demo scan -->
+    <div class="scan" id="scan" aria-labelledby="scan-title">
+      <div class="scan-head">
+        <span class="scan-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <h2 id="scan-title">Demo: site file scan</h2>
+        <span class="scan-status" id="scan-status" role="status">Not scanned</span>
+      </div>
+      <ul class="files" id="files">
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>wp-config.php</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>wp-includes/class-wp-query.php</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="true" data-why="eval(base64_decode(...)) backdoor"><span class="dot"></span><code>wp-content/uploads/2024/img-cache.php</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>wp-content/themes/twentytwentyfour/functions.php</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="true" data-why="Injected spam redirect script"><span class="dot"></span><code>wp-content/themes/twentytwentyfour/header.php</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>wp-content/plugins/akismet/akismet.php</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="true" data-why="Hidden admin user created by attacker"><span class="dot"></span><code>database: wp_users (id 14 "support_help")</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>.htaccess</code><span class="tag"></span></li>
+      </ul>
+      <div class="scan-foot">
+        <button class="btn btn-primary btn-sm" id="scan-btn" type="button">Run demo scan</button>
+        <button class="btn btn-ghost btn-sm" id="clean-btn" type="button" disabled>Clean</button>
+        <p class="scan-caption">Illustration only. A real cleanup compares every file against clean WordPress and plugin copies and checks the database.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNS -->
+  <section class="signs" aria-labelledby="signs-h">
+    <h2 id="signs-h">Signs your site has been hacked</h2>
+    <ul class="signs-list">
+      <li>Visitors land on pharmacy, casino or other spam pages</li>
+      <li>Google shows "This site may be hacked" or "Deceptive site ahead"</li>
+      <li>Admin users you never created</li>
+      <li>Your host suspended the account for malware</li>
+      <li>Strange pages or links appear in search results</li>
+      <li>The site is suddenly slow or sends spam email</li>
+    </ul>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" aria-labelledby="services-h">
+    <div class="section-head">
+      <h2 id="services-h">What I can do for you</h2>
+      <p>Most clients start with a cleanup. Everything else builds on the same skills: finding what should not be there, and making sure it cannot come back.</p>
+    </div>
+
+    <div class="service-table">
+      <article class="service featured">
+        <h3>Hacked WordPress cleanup and malware removal</h3>
+        <p>I back up the site, find infected files and database entries, remove backdoors and unknown admin users, replace core files with clean copies, and change every credential the attacker could have seen.</p>
+        <ul>
+          <li>Malware, backdoor and web shell removal</li>
+          <li>Spam redirect and SEO spam (pharma, casino, Japanese keyword hack) cleanup</li>
+          <li>Database and admin user review</li>
+          <li>Written report of what was found and fixed</li>
+        </ul>
+      </article>
+
+      <article class="service">
+        <h3>Blacklist and warning removal</h3>
+        <p>After the cleanup I request a review from Google Safe Browsing and other blocklists, and help clear spam pages from search results.</p>
+      </article>
+
+      <article class="service">
+        <h3>WordPress hardening</h3>
+        <p>Updates, a firewall, login protection, two-factor authentication, correct file permissions, disabled file editing, and a backup plan you can restore from.</p>
+      </article>
+
+      <article class="service">
+        <h3>Root cause investigation</h3>
+        <p>Cleaning without finding the entry point means you get hacked again. I look through logs, plugins and themes to find how the attacker got in.</p>
+      </article>
+
+      <article class="service">
+        <h3>Security audit and vulnerability assessment</h3>
+        <p>A look at your site or network from an attacker's side, using tools such as Nmap and Wireshark, with a clear list of issues ordered by risk.</p>
+      </article>
+
+      <article class="service">
+        <h3>AWS cloud security setup</h3>
+        <p>Security Groups, IAM, CloudWatch monitoring and SNS alerts so you hear about an attack quickly, plus automated IP blocking like the system I built for my final year project.</p>
+      </article>
+
+      <article class="service">
+        <h3>Machine learning threat detection</h3>
+        <p>Custom intrusion detection using Random Forest, LSTM and autoencoder models, served through an API and shown on a live dashboard.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process-section" id="process" aria-labelledby="process-h">
+    <div class="section-head">
+      <h2 id="process-h">How a cleanup works</h2>
+      <p>The order matters. Each step depends on the one before it.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>Tell me what you see</h3>
+        <p>Send the URL and what has happened. I reply with what I think is going on and what access I need.</p>
+      </li>
+      <li>
+        <h3>Back up and contain</h3>
+        <p>I take a full copy of the site so nothing is lost, then limit the attacker's access while I work.</p>
+      </li>
+      <li>
+        <h3>Find and remove</h3>
+        <p>I scan files and the database, remove malware and backdoors, and restore clean core files.</p>
+      </li>
+      <li>
+        <h3>Close the hole</h3>
+        <p>Outdated plugins, weak passwords and stolen credentials are fixed or replaced. Hardening is applied.</p>
+      </li>
+      <li>
+        <h3>Report and monitor</h3>
+        <p>You get a written summary of what was found, what was changed, and what to do to stay safe.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECT -->
+  <section class="section" id="project" aria-labelledby="project-h">
+    <div class="section-head">
+      <h2 id="project-h">Proof of work: a cloud intrusion detection system</h2>
+      <p>My final year research project, built and deployed end to end. It detects attacks with machine learning and blocks the attacker automatically on AWS.</p>
+    </div>
+
+    <div class="stats">
+      <div><strong>99%</strong><span>top detection accuracy</span></div>
+      <div><strong>&lt; 5 s</strong><span>from detection to IP block</span></div>
+      <div><strong>125,000+</strong><span>network samples trained on</span></div>
+      <div><strong>15+</strong><span>attack types detected</span></div>
+    </div>
+
+    <div class="project-cols">
+      <div>
+        <h3>Detection</h3>
+        <ul>
+          <li>Random Forest, LSTM and autoencoder ensemble with 95 to 99% accuracy</li>
+          <li>SMOTE for class imbalance, improving rare attack detection by 40%</li>
+          <li>Inference under 100 ms for real-time use</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Cloud response</h3>
+        <ul>
+          <li>Runs on AWS EC2 with an auto-start service for 24/7 uptime</li>
+          <li>Blocks attacker IPs through AWS Security Groups in under 5 seconds</li>
+          <li>CloudWatch monitoring and SNS email alerts</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Application</h3>
+        <ul>
+          <li>FastAPI backend: 100+ requests per second, under 200 ms response</li>
+          <li>React.js dashboard with attack trends and risk charts</li>
+          <li>Docker, Git and GitHub with 50+ commits</li>
+        </ul>
+      </div>
+    </div>
+    <p class="project-link"><a class="btn btn-ghost" href="https://github.com/roshithamanda/cloud-idrs" target="_blank" rel="noopener">View the code on GitHub</a></p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about" aria-labelledby="about-h">
+    <div class="section-head">
+      <h2 id="about-h">About me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I am Roshith Amanda Perera, a cybersecurity and cloud networking professional from Jaela, Sri Lanka. I build systems that notice attacks and respond to them faster than a person can, and I help people recover when an attack has already happened.</p>
+        <p>I hold a BEng (Hons) in Computer Networking and Cloud Security from London Metropolitan University, following a Level 5 HND in Cybersecurity at ESOFT Metro Campus. I am TryHackMe certified and keep practising there.</p>
+        <p>I care about reducing response time and protecting systems that people depend on.</p>
+      </div>
+
+      <div class="about-side">
+        <h3>Education</h3>
+        <p><strong>BEng (Hons) Computer Networking and Cloud Security</strong><br>London Metropolitan University, UK</p>
+        <p><strong>Level 5 HND in Cybersecurity</strong><br>ESOFT Metro Campus</p>
+
+        <h3>Certifications (TryHackMe)</h3>
+        <ul class="certs">
+          <li>Cyber Security 101 <small>Sep 2025, ID THM-06WGGB8ICS</small></li>
+          <li>Pre Security <small>Sep 2025, ID THM-YQRFIO6CUV</small></li>
+          <li>Advent of Cyber 2025 <small>Dec 2025, ID THM-EBIPE0BCEJ</small></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="skills-h">Skills and tools</h3>
+    <dl class="skills">
+      <div><dt>Cybersecurity</dt><dd>IDS, network security, threat detection, vulnerability assessment, SOC, incident response</dd></div>
+      <div><dt>Cloud</dt><dd>AWS EC2, Security Groups, CloudWatch, SNS, IAM, cloud-native architecture</dd></div>
+      <div><dt>Machine learning</dt><dd>Scikit-learn, TensorFlow/Keras, Random Forest, LSTM, autoencoder, SMOTE, feature engineering</dd></div>
+      <div><dt>Backend</dt><dd>Python, FastAPI, REST APIs, SQLite, Uvicorn</dd></div>
+      <div><dt>Frontend</dt><dd>React.js, JavaScript, HTML/CSS, Material-UI, Chart.js</dd></div>
+      <div><dt>Tools</dt><dd>Docker, Git, GitHub, Linux/Ubuntu, Kali Linux, Wireshark, Nmap, Jupyter</dd></div>
+      <div><dt>Data</dt><dd>Pandas, NumPy, EDA, preprocessing, NSL-KDD, CICIDS2017, UNSW-NB15</dd></div>
+    </dl>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="contact-h">
+    <div class="contact-intro">
+      <h2 id="contact-h">Tell me what happened</h2>
+      <p>Describe the problem and include your website address. I will reply by email with what I think is going on and the next step.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:roshithamandaperera@gmail.com">roshithamandaperera@gmail.com</a></li>
+        <li><span>Phone / WhatsApp</span><a href="https://wa.me/94753315890" target="_blank" rel="noopener">+94 75 331 5890</a></li>
+        <li><span>LinkedIn</span><a href="https://linkedin.com/in/roshith-perera" target="_blank" rel="noopener">linkedin.com/in/roshith-perera</a></li>
+        <li><span>GitHub</span><a href="https://github.com/roshithamanda" target="_blank" rel="noopener">github.com/roshithamanda</a></li>
+        <li><span>Location</span>Jaela, Sri Lanka. Working with clients anywhere.</li>
+      </ul>
+    </div>
+
+    <form class="form" id="contact-form" novalidate>
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="site">Website address</label>
+      <input id="site" name="site" type="text" placeholder="https://example.com">
+
+      <label for="need">What do you need?</label>
+      <select id="need" name="need">
+        <option>Hacked WordPress cleanup</option>
+        <option>Google warning or blacklist removal</option>
+        <option>WordPress hardening</option>
+        <option>Security audit</option>
+        <option>AWS cloud security</option>
+        <option>Machine learning threat detection</option>
+        <option>Something else</option>
+      </select>
+
+      <label for="msg">What are you seeing?</label>
+      <textarea id="msg" name="msg" rows="5" required></textarea>
+
+      <button class="btn btn-primary" type="submit">Open email to send</button>
+      <p class="form-msg" id="form-msg" role="alert"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Roshith Amanda Perera. Cybersecurity, cloud security and machine learning.</p>
+  <p><a href="#top">Back to top</a></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
