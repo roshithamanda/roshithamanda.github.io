@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cityrosh | Cybersecurity, Penetration Testing & Server Security</title>
+  <meta name="description" content="Cityrosh finds the weak points before attackers do. Penetration testing, hacked site and server cleanup, server hardening, AWS cloud security and machine learning threat detection. Remote, discreet, always with written permission.">
+  <meta name="theme-color" content="#0f2a33">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="promo" role="region" aria-label="Fiverr offer">
+  <p>Hacked site or broken server? Fixed-price help from <strong>$15</strong> on Fiverr. <a href="#gigs">See my gigs</a></p>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Cityrosh, home">
+    <span class="brand-mark" aria-hidden="true">CR</span>
+    <span class="brand-name">Cityrosh</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+  <nav id="nav" class="nav">
+    <a href="#gigs">Fiverr gigs</a>
+    <a href="#services">Services</a>
+    <a href="#process">How it works</a>
+    <a href="#project">Our system</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="nav-cta">Get help</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <p class="hero-kicker">Cybersecurity, penetration testing and cloud security</p>
+      <h1>Find the weak points before attackers do.</h1>
+      <p class="lead">Cityrosh tests websites, servers, networks and cloud accounts the way a real attacker would, then helps you fix what we find. Remote, discreet and always with your written permission.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Book a free consultation</a>
+        <a class="btn btn-ghost" href="#gigs">Order on Fiverr from $15</a>
+        <a class="btn btn-ghost" href="https://wa.me/94779125565?text=Hi%20Cityrosh%2C%20I%27d%20like%20help%20with%20my%20site%20or%20server." target="_blank" rel="noopener">Message us on WhatsApp</a>
+      </div>
+      <p class="hero-note">Remote work for clients worldwide. Written permission before any test. Plain-English reports with fix steps.</p>
+    </div>
+
+    <!-- Interactive demo assessment -->
+    <div class="scan" id="scan" aria-labelledby="scan-title">
+      <div class="scan-head">
+        <span class="scan-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <h2 id="scan-title">Demo: security assessment</h2>
+        <span class="scan-status" id="scan-status" role="status">Not started</span>
+      </div>
+      <ul class="files" id="files">
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>firewall: only ports 80 and 443 open</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="true" data-why="PermitRootLogin yes"><span class="dot"></span><code>ssh: PermitRootLogin yes</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>web server: TLS 1.3 enabled</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="true" data-why="Unsanitised input, SQL injection risk"><span class="dot"></span><code>app: /search?q=</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>os: security updates installed</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="true" data-why="Reachable without MFA or rate limit"><span class="dot"></span><code>app: /admin panel</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>database: not exposed to internet</code><span class="tag"></span></li>
+        <li data-state="unknown" data-bad="false"><span class="dot"></span><code>cloud: backup bucket is private</code><span class="tag"></span></li>
+      </ul>
+      <div class="scan-foot">
+        <button class="btn btn-primary btn-sm" id="scan-btn" type="button">Run demo assessment</button>
+        <button class="btn btn-ghost btn-sm" id="clean-btn" type="button" disabled>Apply fixes</button>
+        <p class="scan-caption">Illustration only. A real engagement uses agreed scope, authorised testing and a written report.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNS -->
+  <section class="signs" aria-labelledby="signs-h">
+    <h2 id="signs-h">Signs you need us</h2>
+    <ul class="signs-list">
+      <li>Visitors land on pharmacy, casino or other spam pages</li>
+      <li>Google shows "This site may be hacked" or "Deceptive site ahead"</li>
+      <li>Admin users or SSH keys you never created</li>
+      <li>Your host suspended the account for malware</li>
+      <li>Strange pages or links appear in search results</li>
+      <li>The server is slow, sends spam email, or is locked out</li>
+    </ul>
+  </section>
+
+  <!-- FIVERR GIGS -->
+  <section class="section gigs" id="gigs" aria-labelledby="gigs-h">
+    <div class="section-head">
+      <h2 id="gigs-h">Fixed-price security help on Fiverr</h2>
+      <p>Pick a gig, press the button and it opens on Fiverr, where you can order with Fiverr's buyer protection. Each starts at $15. Not sure which one fits? Message me before you order.</p>
+    </div>
+
+    <!-- Featured gig -->
+    <article class="gig gig-featured">
+      <figure class="gig-media">
+        <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/509244700/original/32015a80258d5a0e75db5739ef096a52aa867e70/fix-a-hacked-wordpress-site-and-remove-malware.png" alt="Fix a hacked WordPress site and remove malware gig cover" width="1280" height="769" loading="lazy" decoding="async">
+      </figure>
+      <div class="gig-body">
+        <p class="gig-flag">Hacked right now? Start here</p>
+        <h3><a class="gig-link" href="https://www.fiverr.com/s/yev0WvG" target="_blank" rel="noopener">Fix a hacked WordPress site and remove malware</a></h3>
+        <p>Spam redirects, strange admin users, a host warning or a Google red screen. I check the site, find the problem and clear it, then explain what happened.</p>
+        <ul class="gig-points">
+          <li>Vulnerability testing and malware removal</li>
+          <li>Security patch installation</li>
+          <li>Blacklist removal</li>
+        </ul>
+        <div class="gig-foot">
+          <p class="gig-price"><strong>From $15</strong><span>2-day delivery</span></p>
+          <span class="btn btn-primary gig-cta">View gig on Fiverr</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Other gigs -->
+    <div class="gig-grid">
+      <article class="gig">
+        <figure class="gig-media">
+          <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/508895991/original/4c46b143e46d4e414c73fcd13cc969fbd3fde3c9/perform-security-assessment-of-your-wordpress-website.png" alt="WordPress security assessment gig cover" width="1280" height="769" loading="lazy" decoding="async">
+        </figure>
+        <div class="gig-body">
+          <h3><a class="gig-link" href="https://www.fiverr.com/s/2pK2Q68" target="_blank" rel="noopener">Security assessment of your WordPress website</a></h3>
+          <p>A check for common vulnerabilities and weak settings, with clear findings and fixes. Only sites you own or may test.</p>
+          <ul class="gig-points">
+            <li>Vulnerability testing</li>
+            <li>SSL certificate check</li>
+            <li>Short written report</li>
+          </ul>
+          <div class="gig-foot">
+            <p class="gig-price"><strong>From $15</strong><span>1-day delivery</span></p>
+            <span class="btn btn-ghost btn-sm gig-cta">View gig on Fiverr</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gig">
+        <figure class="gig-media">
+          <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/508591387/original/b89072195124e475d16f7e5953bdf55b4ceae841/harden-and-secure-your-linux-server.jpg" alt="Harden and secure your Linux server gig cover" width="1280" height="769" loading="lazy" decoding="async">
+        </figure>
+        <div class="gig-body">
+          <h3><a class="gig-link" href="https://www.fiverr.com/s/aek67YN" target="_blank" rel="noopener">Harden and secure your Linux server</a></h3>
+          <p>SSH hardening, UFW firewall rules and Fail2ban on Ubuntu, Debian and other Linux servers, checked and documented.</p>
+          <ul class="gig-points">
+            <li>SSH and firewall review</li>
+            <li>Fail2ban setup</li>
+            <li>Security recommendations</li>
+          </ul>
+          <div class="gig-foot">
+            <p class="gig-price"><strong>From $15</strong><span>1-day delivery</span></p>
+            <span class="btn btn-ghost btn-sm gig-cta">View gig on Fiverr</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gig">
+        <figure class="gig-media">
+          <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/508474320/original/55bbdc499ed92bc4b02ee6672f5eafb37aa725d1/troubleshoot-and-fix-linux-ubuntu-server-and-system-issues.png" alt="Troubleshoot and fix Linux Ubuntu server issues gig cover" width="1280" height="769" loading="lazy" decoding="async">
+        </figure>
+        <div class="gig-body">
+          <h3><a class="gig-link" href="https://www.fiverr.com/s/BbR78Xb" target="_blank" rel="noopener">Troubleshoot and fix Linux and Ubuntu server issues</a></h3>
+          <p>Package errors, SSH and permission problems, firewall, Docker and network faults, solved with a clear explanation.</p>
+          <ul class="gig-points">
+            <li>Fix for one Linux or Ubuntu issue</li>
+            <li>Remote support with your permission</li>
+            <li>Documentation of what changed</li>
+          </ul>
+          <div class="gig-foot">
+            <p class="gig-price"><strong>From $15</strong><span>1-day delivery</span></p>
+            <span class="btn btn-ghost btn-sm gig-cta">View gig on Fiverr</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="gigs-note">Need something bigger, like a full penetration test or AWS security? <a href="#contact">Tell us about it</a> and we will quote you directly.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" aria-labelledby="services-h">
+    <div class="section-head">
+      <h2 id="services-h">Security help for any website or system</h2>
+      <p>A WordPress shop, a custom web app, a Linux server or an AWS account. The work is the same: find what an attacker could use, prove it, and fix it.</p>
+    </div>
+
+    <div class="service-table">
+      <article class="service featured">
+        <h3>Penetration testing</h3>
+        <p>A hands-on attack simulation against your website, web app, API, server, network or cloud setup, within limits we agree in writing. You get a report that explains each problem, how serious it is, and exactly how to fix it.</p>
+        <ul>
+          <li>Websites, web apps and APIs on any platform</li>
+          <li>Servers and networks, inside and outside</li>
+          <li>AWS cloud configuration</li>
+          <li>Findings ranked by risk, with fix steps</li>
+          <li>A free retest to confirm the fixes</li>
+        </ul>
+      </article>
+
+      <article class="service">
+        <h3>Remote server fixes</h3>
+        <p>Service down, disk full, high CPU, failed updates, locked out of SSH, broken web server or email. We connect remotely, find the cause, fix it and explain what changed.</p>
+      </article>
+
+      <article class="service">
+        <h3>Hacked site or server cleanup</h3>
+        <p>Malware, backdoors, unknown users and spam redirects removed from any website or Linux server, WordPress included, plus log analysis to find how the attacker got in.</p>
+      </article>
+
+      <article class="service">
+        <h3>Server hardening</h3>
+        <p>Secure SSH, firewall rules, patching, least-privilege accounts, brute-force protection and useful logging, so the same attack fails next time.</p>
+      </article>
+
+      <article class="service">
+        <h3>Vulnerability assessment</h3>
+        <p>A lighter, lower-cost check using tools such as Nmap, with findings sorted by risk. A good first step before a full penetration test.</p>
+      </article>
+
+      <article class="service">
+        <h3>AWS cloud security</h3>
+        <p>Security Groups, IAM, CloudWatch monitoring and SNS alerts, plus automated IP blocking like the system we built in our research.</p>
+      </article>
+
+      <article class="service">
+        <h3>Machine learning threat detection</h3>
+        <p>Custom intrusion detection using Random Forest, LSTM and autoencoder models, served through an API and shown on a live dashboard.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WHO WE HELP -->
+  <section class="section" aria-labelledby="who-h">
+    <div class="section-head">
+      <h2 id="who-h">Who we work with</h2>
+    </div>
+    <ul class="signs-list who-list">
+      <li>Startups and SaaS teams</li>
+      <li>Online stores</li>
+      <li>Agencies and their clients</li>
+      <li>Small and medium businesses</li>
+      <li>Developers and IT teams</li>
+    </ul>
+  </section>
+
+  <!-- REPORT -->
+  <section class="section" aria-labelledby="report-h">
+    <div class="section-head">
+      <h2 id="report-h">A report you can act on</h2>
+      <p>Many security reports are long lists of jargon. Ours start with what matters most and tell you what to do about it.</p>
+    </div>
+    <div class="project-cols">
+      <div>
+        <h3>Clarity</h3>
+        <ul>
+          <li>A short summary for managers and owners</li>
+          <li>Findings ranked from critical to low</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Proof</h3>
+        <ul>
+          <li>Evidence for each finding, so you can see it is real</li>
+          <li>Step-by-step fixes your team can follow, or we apply them for you</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Closure</h3>
+        <ul>
+          <li>A retest to confirm every problem is closed</li>
+          <li>A final summary when the work is done</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process-section" id="process" aria-labelledby="process-h">
+    <div class="section-head">
+      <h2 id="process-h">Five steps, one climb</h2>
+      <p>Each step builds on the one before it, from your first message to a retested, safer system.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>Tell us what you need</h3>
+        <p>Send the website or system and what worries you. We reply with what we recommend.</p>
+      </li>
+      <li>
+        <h3>Agree scope and permission</h3>
+        <p>We write down what we may test, what is off limits, the dates, and how we reach each other.</p>
+      </li>
+      <li>
+        <h3>Test or investigate</h3>
+        <p>We scan, probe and try to break in, or work through the fault, using tools such as Nmap, Wireshark and Kali Linux.</p>
+      </li>
+      <li>
+        <h3>Report and fix</h3>
+        <p>You get problems ranked by risk. We apply the fixes remotely or guide your team through them.</p>
+      </li>
+      <li>
+        <h3>Retest and close</h3>
+        <p>We check again to confirm every problem is closed, then send you the final summary.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section" aria-labelledby="trust-h">
+    <div class="section-head">
+      <h2 id="trust-h">Permission first, always</h2>
+      <p>We only test systems you own or have given us written permission to test. Before any work starts we agree what is in scope, what is off limits, and when testing happens. What we find stays between us, and we will sign an NDA if you ask.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>How remote access works</h3>
+        <ul class="certs">
+          <li>You create a temporary account or key for us. We never ask for your main password.</li>
+          <li>We work in the time window we agree, and tell you what we changed.</li>
+          <li>When we finish you remove our access, and we give you the commands to do it.</li>
+        </ul>
+      </div>
+      <div class="about-side">
+        <h3>Our promise</h3>
+        <p>Authorised testing only. Clear scope. Plain-English reporting. Your data stays private.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section class="section" id="project" aria-labelledby="project-h">
+    <div class="section-head">
+      <h2 id="project-h">Built, not just borrowed</h2>
+      <p>We built a complete Cloud Intrusion Detection and Response System as a research project. It spots attacks with machine learning and blocks the attacker on AWS automatically. It is how we know what good detection looks like.</p>
+    </div>
+
+    <div class="stats">
+      <div><strong>99%</strong><span>top detection accuracy</span></div>
+      <div><strong>&lt; 5 s</strong><span>from detection to IP block</span></div>
+      <div><strong>125,000+</strong><span>network samples trained on</span></div>
+      <div><strong>15+</strong><span>attack types detected</span></div>
+    </div>
+
+    <div class="project-cols">
+      <div>
+        <h3>Detection</h3>
+        <ul>
+          <li>Random Forest, LSTM and autoencoder ensemble with 95 to 99% accuracy</li>
+          <li>SMOTE for class imbalance, improving rare attack detection by 40%</li>
+          <li>Inference under 100 ms for real-time use</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Automated response</h3>
+        <ul>
+          <li>Runs on AWS EC2 with an auto-start service for 24/7 uptime</li>
+          <li>AWS Security Groups block the attacker's IP in under 5 seconds, instead of hours</li>
+          <li>CloudWatch monitoring and SNS email alerts</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visibility</h3>
+        <ul>
+          <li>FastAPI backend: 100+ requests per second, under 200 ms response</li>
+          <li>Live React.js dashboard with attack trends and risk charts</li>
+          <li>Docker, Git and GitHub with 50+ commits</li>
+        </ul>
+      </div>
+    </div>
+    <p class="project-link"><a class="btn btn-ghost" href="https://github.com/roshithamanda/cloud-idrs" target="_blank" rel="noopener">Read the code on GitHub</a></p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about" aria-labelledby="about-h">
+    <div class="section-head">
+      <h2 id="about-h">Led by Roshith Amanda Perera</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Roshith founded Cityrosh after building machine learning intrusion detection and cloud response systems. He holds a BEng (Hons) in Computer Networking and Cloud Security from London Metropolitan University and a Level 5 HND in Cybersecurity from ESOFT Metro Campus.</p>
+        <p>He cares about reducing response time and protecting systems that people depend on, and works with clients worldwide from Sri Lanka.</p>
+      </div>
+
+      <div class="about-side">
+        <h3>Education</h3>
+        <p><strong>BEng (Hons) Computer Networking and Cloud Security</strong><br>London Metropolitan University, UK</p>
+        <p><strong>Level 5 HND in Cybersecurity</strong><br>ESOFT Metro Campus</p>
+
+        <h3>Certifications (TryHackMe)</h3>
+        <ul class="certs">
+          <li>Cyber Security 101 <small>Sep 2025, ID THM-06WGGB8ICS</small></li>
+          <li>Pre Security <small>Sep 2025, ID THM-YQRFIO6CUV</small></li>
+          <li>Advent of Cyber 2025 <small>Dec 2025, ID THM-EBIPE0BCEJ</small></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="skills-h">Skills and tools</h3>
+    <dl class="skills">
+      <div><dt>Cybersecurity</dt><dd>Penetration testing, IDS, network security, threat detection, vulnerability assessment, SOC, incident response</dd></div>
+      <div><dt>Cloud</dt><dd>AWS EC2, Security Groups, CloudWatch, SNS, IAM, cloud-native architecture</dd></div>
+      <div><dt>Machine learning</dt><dd>Scikit-learn, TensorFlow/Keras, Random Forest, LSTM, autoencoder, SMOTE, feature engineering</dd></div>
+      <div><dt>Backend</dt><dd>Python, FastAPI, REST APIs, SQLite, Uvicorn</dd></div>
+      <div><dt>Frontend</dt><dd>React.js, JavaScript, HTML/CSS, Material-UI, Chart.js</dd></div>
+      <div><dt>Tools</dt><dd>Docker, Git, GitHub, Linux/Ubuntu, Kali Linux, Wireshark, Nmap, Jupyter</dd></div>
+      <div><dt>Data</dt><dd>Pandas, NumPy, EDA, preprocessing, NSL-KDD, CICIDS2017, UNSW-NB15</dd></div>
+    </dl>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" aria-labelledby="faq-h">
+    <div class="section-head">
+      <h2 id="faq-h">Questions people ask first</h2>
+    </div>
+    <div class="project-cols">
+      <div>
+        <h3>Access and safety</h3>
+        <ul>
+          <li>Do you need access to my servers?</li>
+          <li>Is a test safe for my live website?</li>
+          <li>What will I receive at the end?</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Time and cost</h3>
+        <ul>
+          <li>How long does it take, and what does it cost?</li>
+          <li>Can you work with clients outside Sri Lanka?</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Urgent help</h3>
+        <ul>
+          <li>My site was hacked today. What should I do first?</li>
+          <li>Message us on WhatsApp and we will tell you the next step.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="contact-h">
+    <div class="contact-intro">
+      <h2 id="contact-h">Tell us what you need tested or fixed</h2>
+      <p>Describe the problem and the website, server or system involved. We reply with what we think is going on and the next step. The first consultation is free.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:cityroshsupport@gmail.com">cityroshsupport@gmail.com</a></li>
+        <li><span>WhatsApp / phone</span><a href="https://wa.me/94779125565" target="_blank" rel="noopener">+94 77 912 5565</a></li>
+        <li><span>Fiverr</span><a href="https://www.fiverr.com/roshade_ap" target="_blank" rel="noopener">fiverr.com/roshade_ap</a></li>
+        <li><span>LinkedIn</span><a href="https://linkedin.com/in/roshith-perera" target="_blank" rel="noopener">linkedin.com/in/roshith-perera</a></li>
+        <li><span>GitHub</span><a href="https://github.com/roshithamanda" target="_blank" rel="noopener">github.com/roshithamanda</a></li>
+        <li><span>Based in</span>Sri Lanka, working with clients worldwide.</li>
+      </ul>
+    </div>
+
+    <form class="form" id="contact-form" novalidate>
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="site">Website or server address</label>
+      <input id="site" name="site" type="text" placeholder="https://example.com">
+
+      <label for="need">What do you need?</label>
+      <select id="need" name="need">
+        <option>Penetration test</option>
+        <option>Remote server fix</option>
+        <option>Hacked site or server cleanup</option>
+        <option>Server hardening</option>
+        <option>Vulnerability assessment</option>
+        <option>AWS cloud security</option>
+        <option>Machine learning threat detection</option>
+        <option>Something else</option>
+      </select>
+
+      <label for="msg">What do you need tested or fixed?</label>
+      <textarea id="msg" name="msg" rows="5" required></textarea>
+
+      <button class="btn btn-primary" type="submit">Open email to send</button>
+      <p class="form-msg" id="form-msg" role="alert"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Cityrosh. Cybersecurity, penetration testing and cloud security.</p>
+  <p><a href="#top">Back to top</a></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

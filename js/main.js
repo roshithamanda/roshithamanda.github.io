@@ -114,6 +114,41 @@
     cleanBtn.addEventListener("click", runClean);
   }
 
+  /* ---------- Fiverr gig cards ---------- */
+  var gigCards = Array.prototype.slice.call(document.querySelectorAll(".gig"));
+
+  gigCards.forEach(function (card) {
+    var media = card.querySelector(".gig-media");
+    var img = media && media.querySelector("img");
+    var title = card.querySelector("h3");
+    var cta = card.querySelector(".gig-cta");
+    var link = card.querySelector(".gig-link");
+    var label = cta ? cta.textContent : "";
+
+    /* If Fiverr's image can't load, show a clean title panel instead of a broken icon */
+    function showFallback() {
+      if (!media) return;
+      media.classList.add("img-failed");
+      media.setAttribute("data-title", title ? title.textContent : "Fiverr gig");
+    }
+    if (img) {
+      img.addEventListener("error", showFallback);
+      if (img.complete && img.naturalWidth === 0 && img.getAttribute("src")) showFallback();
+    }
+
+    /* Confirm the click: the gig opens in a new tab */
+    if (link && cta) {
+      link.addEventListener("click", function () {
+        card.setAttribute("data-state", "opening");
+        cta.textContent = "Opening on Fiverr...";
+        setTimeout(function () {
+          card.removeAttribute("data-state");
+          cta.textContent = label;
+        }, 2500);
+      });
+    }
+  });
+
   /* ---------- Contact form (opens the visitor's email app) ---------- */
   var form = document.getElementById("contact-form");
   var msgEl = document.getElementById("form-msg");
